@@ -24,8 +24,8 @@ jobs:
       - name: Warm Loom cache (download + remap Minecraft, no Sodium dep)
         run: ./gradlew --no-daemon --stacktrace build -Pmetalboi.sodium= || true
 
-      - name: Run recon round 2
-        run: bash ci/recon2.sh
+      - name: Run recon round 3
+        run: bash ci/recon3.sh
 
       - name: Commit recon output back to the branch
         run: |
@@ -35,7 +35,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No recon changes to commit"
           else
-            git commit -m "ci: recon round 2 (decompiled MC sources + javap)"
+            git commit -m "ci: recon round 3 (GL encoder / present path / shaders)"
             git pull --rebase origin "${GITHUB_REF_NAME}" || true
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
