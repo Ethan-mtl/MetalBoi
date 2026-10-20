@@ -1,0 +1,13 @@
+########## RESULT ##########
+total 44
+drwxr-xr-x  2 runner runner  4096 Oct 20 04:13 .
+drwxr-xr-x 11 runner runner  4096 Oct 20 04:13 ..
+-rw-r--r--  1 runner runner 35169 Oct 20 04:13 metalboi-1.0.0.jar
+
+########## COMPILER / MIXIN ERRORS ##########
+25:Cannot remap renderSingleBlock because it does not exist in any of the targets [net/minecraft/class_776]
+26:Cannot remap lambda$init$2 because it does not exist in any of the targets [net/minecraft/class_429]
+27:Cannot remap iterateVisibleBlockEntities because it does not exist in any of the targets [net/minecraft/class_761]
+28:Cannot remap lambda$addMainPass$1 because it does not exist in any of the targets [net/minecraft/class_761]
+41:> Task :remapJar
+42:> Task :remapSourcesJar SKIPPED
