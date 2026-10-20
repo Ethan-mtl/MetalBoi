@@ -1,0 +1,9 @@
+Compiled from "StringRepresentable.java"
+public class net.minecraft.util.StringRepresentable$StringRepresentableCodec<S extends net.minecraft.util.StringRepresentable> implements com.mojang.serialization.Codec<S> {
+  private final com.mojang.serialization.Codec<S> codec;
+  public net.minecraft.util.StringRepresentable$StringRepresentableCodec(S[], java.util.function.Function<java.lang.String, S>, java.util.function.ToIntFunction<S>);
+  public <T> com.mojang.serialization.DataResult<com.mojang.datafixers.util.Pair<S, T>> decode(com.mojang.serialization.DynamicOps<T>, T);
+  public <T> com.mojang.serialization.DataResult<T> encode(S, com.mojang.serialization.DynamicOps<T>, T);
+  public com.mojang.serialization.DataResult encode(java.lang.Object, com.mojang.serialization.DynamicOps, java.lang.Object);
+  private static net.minecraft.util.StringRepresentable method_53957(net.minecraft.util.StringRepresentable[], int);
+}

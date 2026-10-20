@@ -1,0 +1,12 @@
+Compiled from "AddFlagIfNotPresentFix.java"
+public class net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix extends com.mojang.datafixers.DataFix {
+  private final java.lang.String name;
+  private final boolean flagValue;
+  private final java.lang.String flagKey;
+  private final com.mojang.datafixers.DSL$TypeReference typeReference;
+  public net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix(com.mojang.datafixers.schemas.Schema, com.mojang.datafixers.DSL$TypeReference, java.lang.String, boolean);
+  protected com.mojang.datafixers.TypeRewriteRule makeRule();
+  private com.mojang.datafixers.Typed method_38789(com.mojang.datafixers.Typed);
+  private com.mojang.serialization.Dynamic method_38790(com.mojang.serialization.Dynamic);
+  private com.mojang.serialization.Dynamic method_38791(com.mojang.serialization.Dynamic);
+}

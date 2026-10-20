@@ -1,0 +1,11 @@
+Compiled from "MemoryCondition.java"
+public final class net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition$Present<Value> extends java.lang.Record implements net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition<com.mojang.datafixers.kinds.IdF$Mu, Value> {
+  private final net.minecraft.world.entity.ai.memory.MemoryModuleType<Value> memory;
+  public net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition$Present(net.minecraft.world.entity.ai.memory.MemoryModuleType<Value>);
+  public net.minecraft.world.entity.ai.memory.MemoryStatus condition();
+  public net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor<com.mojang.datafixers.kinds.IdF$Mu, Value> createAccessor(net.minecraft.world.entity.ai.Brain<?>, java.util.Optional<Value>);
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public net.minecraft.world.entity.ai.memory.MemoryModuleType<Value> memory();
+}

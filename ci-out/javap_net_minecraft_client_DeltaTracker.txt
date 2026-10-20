@@ -1,0 +1,9 @@
+Compiled from "DeltaTracker.java"
+public interface net.minecraft.client.DeltaTracker {
+  public static final net.minecraft.client.DeltaTracker ZERO;
+  public static final net.minecraft.client.DeltaTracker ONE;
+  public abstract float getGameTimeDeltaTicks();
+  public abstract float getGameTimeDeltaPartialTick(boolean);
+  public abstract float getRealtimeDeltaTicks();
+  static {};
+}

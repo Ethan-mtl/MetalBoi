@@ -1,0 +1,20 @@
+Compiled from "PostPass.java"
+public class net.minecraft.client.renderer.PostPass implements java.lang.AutoCloseable {
+  private static final int UBO_SIZE_PER_SAMPLER;
+  private final java.lang.String name;
+  private final com.mojang.blaze3d.pipeline.RenderPipeline pipeline;
+  private final net.minecraft.resources.Identifier outputTargetId;
+  private final java.util.Map<java.lang.String, com.mojang.blaze3d.buffers.GpuBuffer> customUniforms;
+  private final net.minecraft.client.renderer.MappableRingBuffer infoUbo;
+  private final java.util.List<net.minecraft.client.renderer.PostPass$Input> inputs;
+  public net.minecraft.client.renderer.PostPass(com.mojang.blaze3d.pipeline.RenderPipeline, net.minecraft.resources.Identifier, java.util.Map<java.lang.String, java.util.List<net.minecraft.client.renderer.UniformValue>>, java.util.List<net.minecraft.client.renderer.PostPass$Input>);
+  public void addToFrame(com.mojang.blaze3d.framegraph.FrameGraphBuilder, java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>, com.mojang.blaze3d.buffers.GpuBufferSlice);
+  public void close();
+  private void method_67884(com.mojang.blaze3d.resource.ResourceHandle, com.mojang.blaze3d.buffers.GpuBufferSlice, java.util.Map);
+  private java.lang.String method_71313();
+  private static net.minecraft.client.renderer.PostPass$InputTexture method_75415(java.util.Map, com.mojang.blaze3d.systems.SamplerCache, net.minecraft.client.renderer.PostPass$Input);
+  private static com.mojang.blaze3d.resource.ResourceHandle method_62256(com.mojang.blaze3d.framegraph.FramePass, net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle);
+  private java.lang.String method_71314();
+  private java.lang.String method_71126(java.util.Map$Entry);
+  static {};
+}

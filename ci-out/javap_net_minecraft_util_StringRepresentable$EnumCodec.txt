@@ -1,0 +1,9 @@
+Compiled from "StringRepresentable.java"
+public class net.minecraft.util.StringRepresentable$EnumCodec<E extends java.lang.Enum<E> & net.minecraft.util.StringRepresentable> extends net.minecraft.util.StringRepresentable$StringRepresentableCodec<E> {
+  private final java.util.function.Function<java.lang.String, E> resolver;
+  public net.minecraft.util.StringRepresentable$EnumCodec(E[], java.util.function.Function<java.lang.String, E>);
+  public E byName(java.lang.String);
+  public E byName(java.lang.String, E);
+  public E byName(java.lang.String, java.util.function.Supplier<? extends E>);
+  private static int method_42632(java.lang.Object);
+}

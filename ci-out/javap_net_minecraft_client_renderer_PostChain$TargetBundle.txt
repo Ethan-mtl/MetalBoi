@@ -1,0 +1,7 @@
+Compiled from "PostChain.java"
+public interface net.minecraft.client.renderer.PostChain$TargetBundle {
+  public static net.minecraft.client.renderer.PostChain$TargetBundle of(net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>);
+  public abstract void replace(net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>);
+  public abstract com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget> get(net.minecraft.resources.Identifier);
+  public default com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget> getOrThrow(net.minecraft.resources.Identifier);
+}

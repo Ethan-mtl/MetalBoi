@@ -1,0 +1,7 @@
+Compiled from "SetEntityLookTargetSometimes.java"
+public final class net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker {
+  private final net.minecraft.util.valueproviders.UniformInt interval;
+  private int ticksUntilNextStart;
+  public net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker(net.minecraft.util.valueproviders.UniformInt);
+  public boolean tickDownAndCheck(net.minecraft.util.RandomSource);
+}

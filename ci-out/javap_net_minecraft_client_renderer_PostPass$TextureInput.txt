@@ -1,0 +1,19 @@
+Compiled from "PostPass.java"
+public final class net.minecraft.client.renderer.PostPass$TextureInput extends java.lang.Record implements net.minecraft.client.renderer.PostPass$Input {
+  private final java.lang.String samplerName;
+  private final net.minecraft.client.renderer.texture.AbstractTexture texture;
+  private final int width;
+  private final int height;
+  private final boolean bilinear;
+  public net.minecraft.client.renderer.PostPass$TextureInput(java.lang.String, net.minecraft.client.renderer.texture.AbstractTexture, int, int, boolean);
+  public void addToPass(com.mojang.blaze3d.framegraph.FramePass, java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public com.mojang.blaze3d.textures.GpuTextureView texture(java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public boolean bilinear();
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public java.lang.String samplerName();
+  public net.minecraft.client.renderer.texture.AbstractTexture texture();
+  public int width();
+  public int height();
+}

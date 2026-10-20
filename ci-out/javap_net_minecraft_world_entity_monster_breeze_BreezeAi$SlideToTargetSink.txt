@@ -1,0 +1,8 @@
+Compiled from "BreezeAi.java"
+public class net.minecraft.world.entity.monster.breeze.BreezeAi$SlideToTargetSink extends net.minecraft.world.entity.ai.behavior.MoveToTargetSink {
+  public net.minecraft.world.entity.monster.breeze.BreezeAi$SlideToTargetSink(int, int);
+  protected void start(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void start(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+}

@@ -1,0 +1,9 @@
+Compiled from "PostChainConfig.java"
+public interface net.minecraft.client.renderer.PostChainConfig$Input {
+  public static final com.mojang.serialization.Codec<net.minecraft.client.renderer.PostChainConfig$Input> CODEC;
+  public abstract java.lang.String samplerName();
+  public abstract java.util.Set<net.minecraft.resources.Identifier> referencedTargets();
+  private static com.mojang.datafixers.util.Either method_62245(net.minecraft.client.renderer.PostChainConfig$Input);
+  private static net.minecraft.client.renderer.PostChainConfig$Input method_62244(com.mojang.datafixers.util.Either);
+  static {};
+}

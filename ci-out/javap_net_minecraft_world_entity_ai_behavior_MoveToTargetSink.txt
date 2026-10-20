@@ -1,0 +1,23 @@
+Compiled from "MoveToTargetSink.java"
+public class net.minecraft.world.entity.ai.behavior.MoveToTargetSink extends net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob> {
+  private static final int MAX_COOLDOWN_BEFORE_RETRYING;
+  private int remainingCooldown;
+  private net.minecraft.world.level.pathfinder.Path path;
+  private net.minecraft.core.BlockPos lastTargetPos;
+  private float speedModifier;
+  public net.minecraft.world.entity.ai.behavior.MoveToTargetSink();
+  public net.minecraft.world.entity.ai.behavior.MoveToTargetSink(int, int);
+  protected boolean checkExtraStartConditions(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob);
+  protected boolean canStillUse(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void start(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void tick(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  private boolean tryComputePath(net.minecraft.world.entity.Mob, net.minecraft.world.entity.ai.memory.WalkTarget, long);
+  private boolean reachedTarget(net.minecraft.world.entity.Mob, net.minecraft.world.entity.ai.memory.WalkTarget);
+  private static boolean isWalkTargetSpectator(net.minecraft.world.entity.ai.memory.WalkTarget);
+  protected boolean checkExtraStartConditions(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity);
+  protected boolean canStillUse(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void tick(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void start(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+}

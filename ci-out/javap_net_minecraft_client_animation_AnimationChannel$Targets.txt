@@ -1,0 +1,8 @@
+Compiled from "AnimationChannel.java"
+public class net.minecraft.client.animation.AnimationChannel$Targets {
+  public static final net.minecraft.client.animation.AnimationChannel$Target POSITION;
+  public static final net.minecraft.client.animation.AnimationChannel$Target ROTATION;
+  public static final net.minecraft.client.animation.AnimationChannel$Target SCALE;
+  public net.minecraft.client.animation.AnimationChannel$Targets();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "StringRepresentable.java"
+class net.minecraft.util.StringRepresentable$1 implements com.mojang.serialization.Keyable {
+  final net.minecraft.util.StringRepresentable[] val$values;
+  net.minecraft.util.StringRepresentable$1();
+  public <T> java.util.stream.Stream<T> keys(com.mojang.serialization.DynamicOps<T>);
+}

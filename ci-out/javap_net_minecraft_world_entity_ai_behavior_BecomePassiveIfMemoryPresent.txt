@@ -1,0 +1,9 @@
+Compiled from "BecomePassiveIfMemoryPresent.java"
+public class net.minecraft.world.entity.ai.behavior.BecomePassiveIfMemoryPresent {
+  public net.minecraft.world.entity.ai.behavior.BecomePassiveIfMemoryPresent();
+  public static net.minecraft.world.entity.ai.behavior.BehaviorControl<net.minecraft.world.entity.LivingEntity> create(net.minecraft.world.entity.ai.memory.MemoryModuleType<?>, int);
+  private static com.mojang.datafixers.kinds.App method_46909(net.minecraft.world.entity.ai.memory.MemoryModuleType, int, net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance);
+  private static net.minecraft.world.entity.ai.behavior.declarative.Trigger method_46905(int, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor);
+  private static boolean method_46906(net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, int, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  private static java.lang.String method_46907(net.minecraft.world.entity.ai.memory.MemoryModuleType);
+}

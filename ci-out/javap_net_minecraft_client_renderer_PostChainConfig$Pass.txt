@@ -1,0 +1,26 @@
+Compiled from "PostChainConfig.java"
+public final class net.minecraft.client.renderer.PostChainConfig$Pass extends java.lang.Record {
+  private final net.minecraft.resources.Identifier vertexShaderId;
+  private final net.minecraft.resources.Identifier fragmentShaderId;
+  private final java.util.List<net.minecraft.client.renderer.PostChainConfig$Input> inputs;
+  private final net.minecraft.resources.Identifier outputTarget;
+  private final java.util.Map<java.lang.String, java.util.List<net.minecraft.client.renderer.UniformValue>> uniforms;
+  private static final com.mojang.serialization.Codec<java.util.List<net.minecraft.client.renderer.PostChainConfig$Input>> INPUTS_CODEC;
+  private static final com.mojang.serialization.Codec<java.util.Map<java.lang.String, java.util.List<net.minecraft.client.renderer.UniformValue>>> UNIFORM_BLOCKS_CODEC;
+  public static final com.mojang.serialization.Codec<net.minecraft.client.renderer.PostChainConfig$Pass> CODEC;
+  public net.minecraft.client.renderer.PostChainConfig$Pass(net.minecraft.resources.Identifier, net.minecraft.resources.Identifier, java.util.List<net.minecraft.client.renderer.PostChainConfig$Input>, net.minecraft.resources.Identifier, java.util.Map<java.lang.String, java.util.List<net.minecraft.client.renderer.UniformValue>>);
+  public java.util.stream.Stream<net.minecraft.resources.Identifier> referencedTargets();
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public net.minecraft.resources.Identifier vertexShaderId();
+  public net.minecraft.resources.Identifier fragmentShaderId();
+  public java.util.List<net.minecraft.client.renderer.PostChainConfig$Input> inputs();
+  public net.minecraft.resources.Identifier outputTarget();
+  public java.util.Map<java.lang.String, java.util.List<net.minecraft.client.renderer.UniformValue>> uniforms();
+  private static java.util.stream.Stream method_66539(net.minecraft.client.renderer.PostChainConfig$Input);
+  private static com.mojang.datafixers.kinds.App method_62249(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+  private static com.mojang.serialization.DataResult method_62251(java.util.List);
+  private static java.lang.String method_62250(net.minecraft.client.renderer.PostChainConfig$Input);
+  static {};
+}

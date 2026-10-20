@@ -1,0 +1,17 @@
+Compiled from "StringRepresentableArgument.java"
+public class net.minecraft.commands.arguments.StringRepresentableArgument<T extends java.lang.Enum<T> & net.minecraft.util.StringRepresentable> implements com.mojang.brigadier.arguments.ArgumentType<T> {
+  private static final com.mojang.brigadier.exceptions.DynamicCommandExceptionType ERROR_INVALID_VALUE;
+  private final com.mojang.serialization.Codec<T> codec;
+  private final java.util.function.Supplier<T[]> values;
+  protected net.minecraft.commands.arguments.StringRepresentableArgument(com.mojang.serialization.Codec<T>, java.util.function.Supplier<T[]>);
+  public T parse(com.mojang.brigadier.StringReader) throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+  public <S> java.util.concurrent.CompletableFuture<com.mojang.brigadier.suggestion.Suggestions> listSuggestions(com.mojang.brigadier.context.CommandContext<S>, com.mojang.brigadier.suggestion.SuggestionsBuilder);
+  public java.util.Collection<java.lang.String> getExamples();
+  protected java.lang.String convertId(java.lang.String);
+  public java.lang.Object parse(com.mojang.brigadier.StringReader) throws com.mojang.brigadier.exceptions.CommandSyntaxException;
+  private static java.lang.String method_44092(java.lang.Object);
+  private static java.lang.String method_44094(java.lang.Object);
+  private static com.mojang.brigadier.exceptions.CommandSyntaxException method_44093(com.mojang.brigadier.StringReader, java.lang.String);
+  private static com.mojang.brigadier.Message method_44095(java.lang.Object);
+  static {};
+}

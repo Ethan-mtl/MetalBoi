@@ -1,0 +1,12 @@
+Compiled from "GlRenderPipeline.java"
+public final class com.mojang.blaze3d.opengl.GlRenderPipeline extends java.lang.Record implements com.mojang.blaze3d.pipeline.CompiledRenderPipeline {
+  private final com.mojang.blaze3d.pipeline.RenderPipeline info;
+  private final com.mojang.blaze3d.opengl.GlProgram program;
+  public com.mojang.blaze3d.opengl.GlRenderPipeline(com.mojang.blaze3d.pipeline.RenderPipeline, com.mojang.blaze3d.opengl.GlProgram);
+  public boolean isValid();
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public com.mojang.blaze3d.pipeline.RenderPipeline info();
+  public com.mojang.blaze3d.opengl.GlProgram program();
+}

@@ -1,0 +1,22 @@
+Compiled from "RenderTargetDescriptor.java"
+public final class com.mojang.blaze3d.resource.RenderTargetDescriptor extends java.lang.Record implements com.mojang.blaze3d.resource.ResourceDescriptor<com.mojang.blaze3d.pipeline.RenderTarget> {
+  private final int width;
+  private final int height;
+  private final boolean useDepth;
+  private final int clearColor;
+  public com.mojang.blaze3d.resource.RenderTargetDescriptor(int, int, boolean, int);
+  public com.mojang.blaze3d.pipeline.RenderTarget allocate();
+  public void prepare(com.mojang.blaze3d.pipeline.RenderTarget);
+  public void free(com.mojang.blaze3d.pipeline.RenderTarget);
+  public boolean canUsePhysicalResource(com.mojang.blaze3d.resource.ResourceDescriptor<?>);
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public int width();
+  public int height();
+  public boolean useDepth();
+  public int clearColor();
+  public void free(java.lang.Object);
+  public void prepare(java.lang.Object);
+  public java.lang.Object allocate();
+}

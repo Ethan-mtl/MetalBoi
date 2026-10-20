@@ -1,0 +1,13 @@
+Compiled from "SetEntityLookTargetSometimes.java"
+public class net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes {
+  public net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes();
+  public static net.minecraft.world.entity.ai.behavior.BehaviorControl<net.minecraft.world.entity.LivingEntity> create(float, net.minecraft.util.valueproviders.UniformInt);
+  public static net.minecraft.world.entity.ai.behavior.BehaviorControl<net.minecraft.world.entity.LivingEntity> create(net.minecraft.world.entity.EntityType<?>, float, net.minecraft.util.valueproviders.UniformInt);
+  private static net.minecraft.world.entity.ai.behavior.BehaviorControl<net.minecraft.world.entity.LivingEntity> create(float, net.minecraft.util.valueproviders.UniformInt, java.util.function.Predicate<net.minecraft.world.entity.LivingEntity>);
+  private static com.mojang.datafixers.kinds.App method_47075(java.util.function.Predicate, float, net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker, net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance);
+  private static net.minecraft.world.entity.ai.behavior.declarative.Trigger method_47074(net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance, java.util.function.Predicate, float, net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor);
+  private static boolean method_47073(net.minecraft.world.entity.ai.behavior.declarative.BehaviorBuilder$Instance, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, java.util.function.Predicate, float, net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker, net.minecraft.world.entity.ai.behavior.declarative.MemoryAccessor, net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  private static boolean method_47072(net.minecraft.world.entity.LivingEntity, float, net.minecraft.world.entity.LivingEntity);
+  private static boolean method_47070(net.minecraft.world.entity.EntityType, net.minecraft.world.entity.LivingEntity);
+  private static boolean method_47071(net.minecraft.world.entity.LivingEntity);
+}

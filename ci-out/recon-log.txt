@@ -1,0 +1,200 @@
+########## ENVIRONMENT ##########
+openjdk version "21.0.12.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS, mixed mode, sharing)
+pwd: /home/runner/work/MetalBoi/MetalBoi
+
+########## MC 1.21.11 VERSION MANIFEST ##########
+ERR Unexpected UTF-8 BOM (decode using utf-8-sig): line 1 column 1 (char 0)
+
+########## SODIUM COORDINATE PROBES ##########
+--- https://maven.caffeinemc.net/releases/net/caffeinemc/sodium-fabric/maven-metadata.xml -> http=200
+<version>0.9.1-beta.3+mc26.1.2</version>
+<version>0.8.13-beta.3+mc1.21.11</version>
+<version>0.9.1-beta.4+mc26.1.2</version>
+<version>0.9.1-beta.4+mc26.2</version>
+<version>0.8.12+mc1.21.1</version>
+<version>0.8.13+mc1.21.11</version>
+<version>0.9.1+mc26.2</version>
+<version>0.9.1+mc26.1.2</version>
+<version>0.9.2-alpha.1+mc26.2</version>
+<version>0.8.13-beta.1+mc1.21.1</version>
+<version>0.9.2-alpha.2+mc26.2</version>
+<version>0.9.2-alpha.2+mc26.1.2</version>
+<version>0.9.2-alpha.3+mc26.2</version>
+<version>0.9.2-alpha.3+mc26.1.2</version>
+<version>0.9.2-alpha.4+mc26.2</version>
+<version>0.9.2-alpha.4+mc26.1.2</version>
+<version>0.8.13-beta.2+mc1.21.1</version>
+<version>0.8.14-beta.2+mc1.21.11</version>
+<version>0.8.13+mc1.21.1</version>
+<version>0.8.14+mc1.21.11</version>
+<version>0.9.2-beta.1+mc26.1.2</version>
+<version>0.9.2-beta.1+mc26.2</version>
+<version>0.9.2+mc26.2</version>
+<version>0.9.2+mc26.1.2</version>
+<version>0.9.2-beta.1+mc26.3r1</version>
+<version>0.9.2-beta.2+mc26.3r1</version>
+<version>0.9.2+mc26.3</version>
+<version>0.8.15-beta.1+mc1.21.11</version>
+<version>0.9.3-alpha.1+mc26.3</version>
+<version>0.9.3-beta.1+mc26.3</version>
+--- https://maven.caffeinemc.net/snapshots/net/caffeinemc/sodium-fabric/maven-metadata.xml -> http=200
+<version>0.9.2-SNAPSHOT+mc26.2-build.995</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.996</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.997</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.998</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.999</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.1000</version>
+<version>0.9.2-SNAPSHOT+mc26.2-build.1001</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1002</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1003</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1004</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1005</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1006</version>
+<version>0.9.2-SNAPSHOT+mc26.3r1-build.1007</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1008</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1009</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1010</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1011</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1012</version>
+<version>0.9.2-SNAPSHOT+mc26.3-build.1013</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1014</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1015</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1016</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1017</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1018</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1019</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1020</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1021</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1022</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1023</version>
+<version>0.9.3-SNAPSHOT+mc26.3-build.1024</version>
+--- https://maven.fabricmc.net/net/caffeinemc/sodium-fabric/maven-metadata.xml -> http=404
+--- https://api.modrinth.com/maven/maven.modrinth/sodium/maven-metadata.xml -> http=404
+--- Modrinth API: sodium versions for 1.21.11 / fabric ---
+mc1.21.11-0.8.15-beta.1-fabric | Sodium 0.8.15-beta.1 for Fabric 1.21.11 | ['sodium-fabric-0.8.15-beta.1+mc1.21.11.jar']
+mc1.21.11-0.8.14-fabric | Sodium 0.8.14 for Fabric 1.21.11 | ['sodium-fabric-0.8.14+mc1.21.11.jar']
+mc1.21.11-0.8.14-beta.2-fabric | Sodium 0.8.14-beta.2 for Fabric 1.21.11 | ['sodium-fabric-0.8.14-beta.2+mc1.21.11.jar']
+mc1.21.11-0.8.14-beta.1-fabric | Sodium 0.8.14-beta.1 for Fabric 1.21.11 | ['sodium-fabric-0.8.14-beta.1+mc1.21.11.jar']
+mc1.21.11-0.8.13-fabric | Sodium 0.8.13 for Fabric 1.21.11 | ['sodium-fabric-0.8.13+mc1.21.11.jar']
+mc1.21.11-0.8.13-beta.3-fabric | Sodium 0.8.13-beta.3 for Fabric 1.21.11 | ['sodium-fabric-0.8.13-beta.3+mc1.21.11.jar']
+mc1.21.11-0.8.13-beta.2-fabric | Sodium 0.8.13-beta.2 for Fabric 1.21.11 | ['sodium-fabric-0.8.13-beta.2+mc1.21.11.jar']
+mc1.21.11-0.8.13-beta.1-fabric | Sodium 0.8.13-beta.1 for Fabric 1.21.11 | ['sodium-fabric-0.8.13-beta.1+mc1.21.11.jar']
+mc1.21.11-0.8.12-fabric | Sodium 0.8.12 for Fabric 1.21.11 | ['sodium-fabric-0.8.12+mc1.21.11.jar']
+mc1.21.11-0.8.12-beta.3-fabric | Sodium 0.8.12-beta.3 for Fabric 1.21.11 | ['sodium-fabric-0.8.12-beta.3+mc1.21.11.jar']
+
+########## GRADLE DEPENDENCY TREE ##########
++--- net.minecraft:minecraft-merged:1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2
++--- org.lwjgl:lwjgl-freetype:3.3.3
++--- org.lwjgl:lwjgl-glfw:3.3.3
++--- org.lwjgl:lwjgl-jemalloc:3.3.3
++--- org.lwjgl:lwjgl-openal:3.3.3
++--- org.lwjgl:lwjgl-opengl:3.3.3
++--- org.lwjgl:lwjgl-stb:3.3.3
++--- org.lwjgl:lwjgl-tinyfd:3.3.3
++--- org.lwjgl:lwjgl:3.3.3
+\--- net.fabricmc:fabric-loader:0.19.2
+
+########## LOCATE NAMED MINECRAFT JAR ##########
+NAMED_MC_JAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2.jar
+
+########## CLASS LISTINGS ##########
+--- framebuffer/target/present/post/pipeline related classes ---
+com/mojang/blaze3d/opengl/GlRenderPipeline.class
+com/mojang/blaze3d/pipeline/CompiledRenderPipeline.class
+com/mojang/blaze3d/pipeline/RenderPipeline$Builder.class
+com/mojang/blaze3d/pipeline/RenderPipeline$Snippet.class
+com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription.class
+com/mojang/blaze3d/pipeline/RenderPipeline.class
+com/mojang/blaze3d/pipeline/RenderTarget.class
+com/mojang/blaze3d/resource/RenderTargetDescriptor.class
+net/minecraft/client/animation/AnimationChannel$Targets.class
+net/minecraft/client/renderer/PostChain$TargetBundle$1.class
+net/minecraft/client/renderer/PostChain$TargetBundle.class
+net/minecraft/client/renderer/PostChain.class
+net/minecraft/client/renderer/PostChainConfig$Input.class
+net/minecraft/client/renderer/PostChainConfig$InternalTarget.class
+net/minecraft/client/renderer/PostChainConfig$Pass.class
+net/minecraft/client/renderer/PostChainConfig$TargetInput.class
+net/minecraft/client/renderer/PostChainConfig$TextureInput.class
+net/minecraft/client/renderer/PostChainConfig.class
+net/minecraft/client/renderer/PostPass$Input.class
+net/minecraft/client/renderer/PostPass$InputTexture.class
+net/minecraft/client/renderer/PostPass$TargetInput.class
+net/minecraft/client/renderer/PostPass$TextureInput.class
+net/minecraft/client/renderer/PostPass.class
+net/minecraft/client/renderer/RenderPipelines.class
+net/minecraft/commands/arguments/StringRepresentableArgument.class
+net/minecraft/util/StringRepresentable$1.class
+net/minecraft/util/StringRepresentable$EnumCodec.class
+net/minecraft/util/StringRepresentable$StringRepresentableCodec.class
+net/minecraft/util/StringRepresentable.class
+net/minecraft/util/datafix/fixes/AddFlagIfNotPresentFix.class
+net/minecraft/world/entity/ai/behavior/BecomePassiveIfMemoryPresent.class
+net/minecraft/world/entity/ai/behavior/LookAtTargetSink.class
+net/minecraft/world/entity/ai/behavior/MoveToTargetSink.class
+net/minecraft/world/entity/ai/behavior/SetEntityLookTargetSometimes$Ticker.class
+net/minecraft/world/entity/ai/behavior/SetEntityLookTargetSometimes.class
+net/minecraft/world/entity/ai/behavior/declarative/MemoryCondition$Present.class
+net/minecraft/world/entity/monster/breeze/BreezeAi$SlideToTargetSink.class
+
+########## JAVAP DUMPS ##########
+dumped net.minecraft.client.Minecraft -> javap_net_minecraft_client_Minecraft.txt (374 lines)
+dumped net.minecraft.client.renderer.GameRenderer -> javap_net_minecraft_client_renderer_GameRenderer.txt (104 lines)
+dumped net.minecraft.client.renderer.LevelRenderer -> javap_net_minecraft_client_renderer_LevelRenderer.txt (141 lines)
+dumped net.minecraft.client.gui.Gui -> javap_net_minecraft_client_gui_Gui.txt (172 lines)
+dumped net.minecraft.client.DeltaTracker -> javap_net_minecraft_client_DeltaTracker.txt (9 lines)
+dumped com.mojang.blaze3d.platform.Window -> javap_com_mojang_blaze3d_platform_Window.txt (87 lines)
+dumped com.mojang.blaze3d.pipeline.RenderTarget -> javap_com_mojang_blaze3d_pipeline_RenderTarget.txt (27 lines)
+dumped com.mojang.blaze3d.systems.RenderSystem -> javap_com_mojang_blaze3d_systems_RenderSystem.txt (71 lines)
+dumped net.minecraft.client.Options -> javap_net_minecraft_client_Options.txt (500 lines)
+dumped net.minecraft.client.GraphicsStatus -> javap_net_minecraft_client_GraphicsStatus.txt (2 lines)
+dumped com.mojang.blaze3d.opengl.GlRenderPipeline -> javap_com_mojang_blaze3d_opengl_GlRenderPipeline.txt (12 lines)
+dumped com.mojang.blaze3d.pipeline.CompiledRenderPipeline -> javap_com_mojang_blaze3d_pipeline_CompiledRenderPipeline.txt (4 lines)
+dumped com.mojang.blaze3d.pipeline.RenderPipeline$Builder -> javap_com_mojang_blaze3d_pipeline_RenderPipeline$Builder.txt (51 lines)
+dumped com.mojang.blaze3d.pipeline.RenderPipeline$Snippet -> javap_com_mojang_blaze3d_pipeline_RenderPipeline$Snippet.txt (37 lines)
+dumped com.mojang.blaze3d.pipeline.RenderPipeline$UniformDescription -> javap_com_mojang_blaze3d_pipeline_RenderPipeline$UniformDescription.txt (15 lines)
+dumped com.mojang.blaze3d.pipeline.RenderPipeline -> javap_com_mojang_blaze3d_pipeline_RenderPipeline.txt (47 lines)
+dumped com.mojang.blaze3d.pipeline.RenderTarget -> javap_com_mojang_blaze3d_pipeline_RenderTarget.txt (27 lines)
+dumped com.mojang.blaze3d.resource.RenderTargetDescriptor -> javap_com_mojang_blaze3d_resource_RenderTargetDescriptor.txt (22 lines)
+dumped net.minecraft.client.animation.AnimationChannel$Targets -> javap_net_minecraft_client_animation_AnimationChannel$Targets.txt (8 lines)
+dumped net.minecraft.client.renderer.PostChain$TargetBundle$1 -> javap_net_minecraft_client_renderer_PostChain$TargetBundle$1.txt (9 lines)
+dumped net.minecraft.client.renderer.PostChain$TargetBundle -> javap_net_minecraft_client_renderer_PostChain$TargetBundle.txt (7 lines)
+dumped net.minecraft.client.renderer.PostChain -> javap_net_minecraft_client_renderer_PostChain.txt (19 lines)
+dumped net.minecraft.client.renderer.PostChainConfig$Input -> javap_net_minecraft_client_renderer_PostChainConfig$Input.txt (9 lines)
+dumped net.minecraft.client.renderer.PostChainConfig$InternalTarget -> javap_net_minecraft_client_renderer_PostChainConfig$InternalTarget.txt (18 lines)
+dumped net.minecraft.client.renderer.PostChainConfig$Pass -> javap_net_minecraft_client_renderer_PostChainConfig$Pass.txt (26 lines)
+dumped net.minecraft.client.renderer.PostChainConfig$TargetInput -> javap_net_minecraft_client_renderer_PostChainConfig$TargetInput.txt (19 lines)
+dumped net.minecraft.client.renderer.PostChainConfig$TextureInput -> javap_net_minecraft_client_renderer_PostChainConfig$TextureInput.txt (21 lines)
+dumped net.minecraft.client.renderer.PostChainConfig -> javap_net_minecraft_client_renderer_PostChainConfig.txt (14 lines)
+dumped net.minecraft.client.renderer.PostPass$Input -> javap_net_minecraft_client_renderer_PostPass$Input.txt (8 lines)
+dumped net.minecraft.client.renderer.PostPass$InputTexture -> javap_net_minecraft_client_renderer_PostPass$InputTexture.txt (13 lines)
+dumped net.minecraft.client.renderer.PostPass$TargetInput -> javap_net_minecraft_client_renderer_PostPass$TargetInput.txt (18 lines)
+dumped net.minecraft.client.renderer.PostPass$TextureInput -> javap_net_minecraft_client_renderer_PostPass$TextureInput.txt (19 lines)
+dumped net.minecraft.client.renderer.PostPass -> javap_net_minecraft_client_renderer_PostPass.txt (20 lines)
+dumped net.minecraft.client.renderer.RenderPipelines -> javap_net_minecraft_client_renderer_RenderPipelines.txt (119 lines)
+dumped net.minecraft.commands.arguments.StringRepresentableArgument -> javap_net_minecraft_commands_arguments_StringRepresentableArgument.txt (17 lines)
+dumped net.minecraft.util.StringRepresentable$1 -> javap_net_minecraft_util_StringRepresentable$1.txt (6 lines)
+dumped net.minecraft.util.StringRepresentable$EnumCodec -> javap_net_minecraft_util_StringRepresentable$EnumCodec.txt (9 lines)
+dumped net.minecraft.util.StringRepresentable$StringRepresentableCodec -> javap_net_minecraft_util_StringRepresentable$StringRepresentableCodec.txt (9 lines)
+dumped net.minecraft.util.StringRepresentable -> javap_net_minecraft_util_StringRepresentable.txt (15 lines)
+dumped net.minecraft.util.datafix.fixes.AddFlagIfNotPresentFix -> javap_net_minecraft_util_datafix_fixes_AddFlagIfNotPresentFix.txt (12 lines)
+dumped net.minecraft.world.entity.ai.behavior.BecomePassiveIfMemoryPresent -> javap_net_minecraft_world_entity_ai_behavior_BecomePassiveIfMemoryPresent.txt (9 lines)
+dumped net.minecraft.world.entity.ai.behavior.LookAtTargetSink -> javap_net_minecraft_world_entity_ai_behavior_LookAtTargetSink.txt (12 lines)
+dumped net.minecraft.world.entity.ai.behavior.MoveToTargetSink -> javap_net_minecraft_world_entity_ai_behavior_MoveToTargetSink.txt (23 lines)
+dumped net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes$Ticker -> javap_net_minecraft_world_entity_ai_behavior_SetEntityLookTargetSometimes$Ticker.txt (7 lines)
+dumped net.minecraft.world.entity.ai.behavior.SetEntityLookTargetSometimes -> javap_net_minecraft_world_entity_ai_behavior_SetEntityLookTargetSometimes.txt (13 lines)
+dumped net.minecraft.world.entity.ai.behavior.declarative.MemoryCondition$Present -> javap_net_minecraft_world_entity_ai_behavior_declarative_MemoryCondition$Present.txt (11 lines)
+dumped net.minecraft.world.entity.monster.breeze.BreezeAi$SlideToTargetSink -> javap_net_minecraft_world_entity_monster_breeze_BreezeAi$SlideToTargetSink.txt (8 lines)
+
+########## KEY SIGNATURE GREPS ##########
+=== Minecraft: target/framebuffer/resize/window ===
+
+=== GameRenderer: render/blit/target ===
+
+=== Window: size getters ===
+
+=== RenderTarget: all ===
+
+########## DONE ##########

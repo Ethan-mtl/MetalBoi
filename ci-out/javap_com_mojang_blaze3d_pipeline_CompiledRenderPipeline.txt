@@ -1,0 +1,4 @@
+Compiled from "CompiledRenderPipeline.java"
+public interface com.mojang.blaze3d.pipeline.CompiledRenderPipeline {
+  public abstract boolean isValid();
+}

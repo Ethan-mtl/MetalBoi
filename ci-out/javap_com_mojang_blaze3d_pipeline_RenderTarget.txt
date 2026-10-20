@@ -1,0 +1,27 @@
+Compiled from "RenderTarget.java"
+public abstract class com.mojang.blaze3d.pipeline.RenderTarget {
+  private static int UNNAMED_RENDER_TARGETS;
+  public int width;
+  public int height;
+  protected final java.lang.String label;
+  public final boolean useDepth;
+  protected com.mojang.blaze3d.textures.GpuTexture colorTexture;
+  protected com.mojang.blaze3d.textures.GpuTextureView colorTextureView;
+  protected com.mojang.blaze3d.textures.GpuTexture depthTexture;
+  protected com.mojang.blaze3d.textures.GpuTextureView depthTextureView;
+  public com.mojang.blaze3d.pipeline.RenderTarget(java.lang.String, boolean);
+  public void resize(int, int);
+  public void destroyBuffers();
+  public void copyDepthFrom(com.mojang.blaze3d.pipeline.RenderTarget);
+  public void createBuffers(int, int);
+  public void blitToScreen();
+  public void blitAndBlendToTexture(com.mojang.blaze3d.textures.GpuTextureView);
+  public com.mojang.blaze3d.textures.GpuTexture getColorTexture();
+  public com.mojang.blaze3d.textures.GpuTextureView getColorTextureView();
+  public com.mojang.blaze3d.textures.GpuTexture getDepthTexture();
+  public com.mojang.blaze3d.textures.GpuTextureView getDepthTextureView();
+  private static java.lang.String method_71167();
+  private java.lang.String method_67768();
+  private java.lang.String method_67767();
+  static {};
+}

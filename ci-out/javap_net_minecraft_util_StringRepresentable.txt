@@ -1,0 +1,15 @@
+Compiled from "StringRepresentable.java"
+public interface net.minecraft.util.StringRepresentable {
+  public static final int PRE_BUILT_MAP_THRESHOLD;
+  public abstract java.lang.String getSerializedName();
+  public static <E extends java.lang.Enum<E> & net.minecraft.util.StringRepresentable> net.minecraft.util.StringRepresentable$EnumCodec<E> fromEnum(java.util.function.Supplier<E[]>);
+  public static <E extends java.lang.Enum<E> & net.minecraft.util.StringRepresentable> net.minecraft.util.StringRepresentable$EnumCodec<E> fromEnumWithMapping(java.util.function.Supplier<E[]>, java.util.function.Function<java.lang.String, java.lang.String>);
+  public static <T extends net.minecraft.util.StringRepresentable> com.mojang.serialization.Codec<T> fromValues(java.util.function.Supplier<T[]>);
+  public static <T extends net.minecraft.util.StringRepresentable> java.util.function.Function<java.lang.String, T> createNameLookup(T[]);
+  public static <T> java.util.function.Function<java.lang.String, T> createNameLookup(T[], java.util.function.Function<T, java.lang.String>);
+  public static com.mojang.serialization.Keyable keys(net.minecraft.util.StringRepresentable[]);
+  private static java.lang.Object method_74546(java.lang.Object[], java.util.function.Function, java.lang.String);
+  private static java.lang.Object method_74542(java.lang.Object);
+  private static java.lang.String method_74544(java.util.function.Function, java.lang.Enum);
+  private static java.lang.String method_49451(java.lang.String);
+}

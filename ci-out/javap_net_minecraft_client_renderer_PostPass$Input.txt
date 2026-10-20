@@ -1,0 +1,8 @@
+Compiled from "PostPass.java"
+public interface net.minecraft.client.renderer.PostPass$Input {
+  public abstract void addToPass(com.mojang.blaze3d.framegraph.FramePass, java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public default void cleanup(java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public abstract com.mojang.blaze3d.textures.GpuTextureView texture(java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public abstract java.lang.String samplerName();
+  public abstract boolean bilinear();
+}

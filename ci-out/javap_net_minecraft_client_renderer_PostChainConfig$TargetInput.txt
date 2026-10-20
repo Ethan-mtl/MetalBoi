@@ -1,0 +1,19 @@
+Compiled from "PostChainConfig.java"
+public final class net.minecraft.client.renderer.PostChainConfig$TargetInput extends java.lang.Record implements net.minecraft.client.renderer.PostChainConfig$Input {
+  private final java.lang.String samplerName;
+  private final net.minecraft.resources.Identifier targetId;
+  private final boolean useDepthBuffer;
+  private final boolean bilinear;
+  public static final com.mojang.serialization.Codec<net.minecraft.client.renderer.PostChainConfig$TargetInput> CODEC;
+  public net.minecraft.client.renderer.PostChainConfig$TargetInput(java.lang.String, net.minecraft.resources.Identifier, boolean, boolean);
+  public java.util.Set<net.minecraft.resources.Identifier> referencedTargets();
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public java.lang.String samplerName();
+  public net.minecraft.resources.Identifier targetId();
+  public boolean useDepthBuffer();
+  public boolean bilinear();
+  private static com.mojang.datafixers.kinds.App method_62252(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+  static {};
+}

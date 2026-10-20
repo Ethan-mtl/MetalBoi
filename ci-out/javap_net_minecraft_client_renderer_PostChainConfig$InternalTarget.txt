@@ -1,0 +1,18 @@
+Compiled from "PostChainConfig.java"
+public final class net.minecraft.client.renderer.PostChainConfig$InternalTarget extends java.lang.Record {
+  private final java.util.Optional<java.lang.Integer> width;
+  private final java.util.Optional<java.lang.Integer> height;
+  private final boolean persistent;
+  private final int clearColor;
+  public static final com.mojang.serialization.Codec<net.minecraft.client.renderer.PostChainConfig$InternalTarget> CODEC;
+  public net.minecraft.client.renderer.PostChainConfig$InternalTarget(java.util.Optional<java.lang.Integer>, java.util.Optional<java.lang.Integer>, boolean, int);
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public java.util.Optional<java.lang.Integer> width();
+  public java.util.Optional<java.lang.Integer> height();
+  public boolean persistent();
+  public int clearColor();
+  private static com.mojang.datafixers.kinds.App method_71125(com.mojang.serialization.codecs.RecordCodecBuilder$Instance);
+  static {};
+}

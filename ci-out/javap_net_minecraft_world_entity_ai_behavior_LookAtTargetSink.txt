@@ -1,0 +1,12 @@
+Compiled from "LookAtTargetSink.java"
+public class net.minecraft.world.entity.ai.behavior.LookAtTargetSink extends net.minecraft.world.entity.ai.behavior.Behavior<net.minecraft.world.entity.Mob> {
+  public net.minecraft.world.entity.ai.behavior.LookAtTargetSink(int, int);
+  protected boolean canStillUse(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected void tick(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.Mob, long);
+  protected boolean canStillUse(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void stop(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  protected void tick(net.minecraft.server.level.ServerLevel, net.minecraft.world.entity.LivingEntity, long);
+  private static void method_18966(net.minecraft.world.entity.Mob, net.minecraft.world.entity.ai.behavior.PositionTracker);
+  private static boolean method_19569(net.minecraft.world.entity.Mob, net.minecraft.world.entity.ai.behavior.PositionTracker);
+}

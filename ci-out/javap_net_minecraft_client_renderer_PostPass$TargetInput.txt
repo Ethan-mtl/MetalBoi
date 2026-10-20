@@ -1,0 +1,18 @@
+Compiled from "PostPass.java"
+public final class net.minecraft.client.renderer.PostPass$TargetInput extends java.lang.Record implements net.minecraft.client.renderer.PostPass$Input {
+  private final java.lang.String samplerName;
+  private final net.minecraft.resources.Identifier targetId;
+  private final boolean depthBuffer;
+  private final boolean bilinear;
+  public net.minecraft.client.renderer.PostPass$TargetInput(java.lang.String, net.minecraft.resources.Identifier, boolean, boolean);
+  private com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget> getHandle(java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public void addToPass(com.mojang.blaze3d.framegraph.FramePass, java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public com.mojang.blaze3d.textures.GpuTextureView texture(java.util.Map<net.minecraft.resources.Identifier, com.mojang.blaze3d.resource.ResourceHandle<com.mojang.blaze3d.pipeline.RenderTarget>>);
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+  public java.lang.String samplerName();
+  public net.minecraft.resources.Identifier targetId();
+  public boolean depthBuffer();
+  public boolean bilinear();
+}

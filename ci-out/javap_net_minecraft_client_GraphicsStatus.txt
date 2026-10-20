@@ -1,0 +1,2 @@
+Error: class not found: net.minecraft.client.GraphicsStatus
+JAVAP FAILED for net.minecraft.client.GraphicsStatus
