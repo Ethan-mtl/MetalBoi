@@ -32,6 +32,14 @@ jobs:
           rm -f dist/*-sources.jar dist/*-dev.jar
           ls -la dist/ || true
           tail -n 700 build-log.txt >ci-out/build/build-log.txt
+          # Put the actionable bits first so failures are readable at a glance.
+          {
+            echo "########## RESULT ##########"
+            ls -la dist/ 2>/dev/null || echo "no dist jars"
+            echo
+            echo "########## COMPILER / MIXIN ERRORS ##########"
+            grep -nE "error:|warning:|FAILURE|What went wrong|Caused by:|Could not resolve|Could not find|Execution failed|Minecraft has crashed|Mixin apply failed|remap" build-log.txt | head -120 || echo "none"
+          } >ci-out/build/build-errors.txt
 
       - name: Commit artefacts back to the branch
         run: |

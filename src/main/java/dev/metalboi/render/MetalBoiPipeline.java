@@ -133,8 +133,8 @@ public final class MetalBoiPipeline {
             return false;
         }
 
-        int nativeWidth = ((WindowAccessor) window).metalboi$getNativeFramebufferWidth();
-        int nativeHeight = ((WindowAccessor) window).metalboi$getNativeFramebufferHeight();
+        int nativeWidth = ((WindowAccessor) (Object) window).metalboi$getNativeFramebufferWidth();
+        int nativeHeight = ((WindowAccessor) (Object) window).metalboi$getNativeFramebufferHeight();
         if (nativeWidth <= 0 || nativeHeight <= 0) {
             return false;
         }
