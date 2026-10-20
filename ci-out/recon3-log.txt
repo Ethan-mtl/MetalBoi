@@ -34,3 +34,74 @@ javap com.mojang.blaze3d.systems.SamplerCache (13 lines)
 javap com.mojang.blaze3d.systems.GpuDevice (26 lines)
 javap com.mojang.blaze3d.vertex.DefaultVertexFormat (20 lines)
 ########## DONE ##########
+genSources exit=0
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.16.1
+
+> Task :validateAccessWidener NO-SOURCE
+
+> Task :genSourcesWithVineflower
+Decompile cache stats: 0 hits, 6622 misses
+
+> Task :genSources
+
+BUILD SUCCESSFUL in 1m 38s
+1 actionable task: 1 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.4.1/userguide/configuration_cache_enabling.html
+SRCJAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2-sources.jar
+NAMED_MC_JAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2.jar
+extracted com/mojang/blaze3d/opengl/GlCommandEncoder.java (997 lines)
+extracted com/mojang/blaze3d/opengl/GlTextureView.java (78 lines)
+extracted com/mojang/blaze3d/opengl/GlTexture.java (97 lines)
+extracted com/mojang/blaze3d/opengl/GlSampler.java (102 lines)
+extracted com/mojang/blaze3d/opengl/GlStateManager.java (602 lines)
+extracted com/mojang/blaze3d/opengl/GlProgram.java (156 lines)
+extracted com/mojang/blaze3d/opengl/GlConst.java (315 lines)
+extracted com/mojang/blaze3d/opengl/VertexArrayCache.java (182 lines)
+extracted com/mojang/blaze3d/systems/SamplerCache.java (75 lines)
+extracted com/mojang/blaze3d/systems/GpuDevice.java (74 lines)
+extracted com/mojang/blaze3d/textures/GpuTextureView.java (43 lines)
+extracted com/mojang/blaze3d/textures/GpuSampler.java (22 lines)
+extracted com/mojang/blaze3d/textures/GpuTexture.java (76 lines)
+extracted com/mojang/blaze3d/shaders/ShaderSource.java (13 lines)
+extracted com/mojang/blaze3d/shaders/ShaderType.java (43 lines)
+extracted com/mojang/blaze3d/vertex/DefaultVertexFormat.java (87 lines)
+extracted com/mojang/blaze3d/vertex/VertexFormat.java (217 lines)
+extracted net/minecraft/client/renderer/ShaderManager.java (323 lines)
+extracted net/minecraft/client/renderer/ShaderDefines.java (105 lines)
+
+########## VANILLA SHADER ASSETS ##########
+--- shader-ish asset paths ---
+93
+assets/minecraft/shaders/core/animate_sprite_blit.fsh
+assets/minecraft/shaders/core/blit_screen.fsh
+assets/minecraft/shaders/core/position_tex.fsh
+assets/minecraft/shaders/core/position_tex.vsh
+assets/minecraft/shaders/core/position_tex_color.fsh
+assets/minecraft/shaders/core/position_tex_color.vsh
+assets/minecraft/shaders/core/screenquad.vsh
+assets/minecraft/shaders/post/bits.fsh
+assets/minecraft/shaders/post/blit.fsh
+assets/minecraft/shaders/post/box_blur.fsh
+assets/minecraft/shaders/post/color_convolve.fsh
+assets/minecraft/shaders/post/entity_outline_box_blur.fsh
+assets/minecraft/shaders/post/entity_sobel.fsh
+assets/minecraft/shaders/post/invert.fsh
+assets/minecraft/shaders/post/rotscale.vsh
+assets/minecraft/shaders/post/spiderclip.fsh
+assets/minecraft/shaders/post/transparency.fsh
+shader assets/minecraft/shaders/core/blit_screen.fsh (11 lines)
+shader assets/minecraft/shaders/core/screenquad.vsh (11 lines)
+
+########## JAVAP: encoder + views ##########
+javap com.mojang.blaze3d.opengl.GlCommandEncoder (44 lines)
+javap com.mojang.blaze3d.opengl.GlTextureView (16 lines)
+javap com.mojang.blaze3d.opengl.GlTexture (20 lines)
+javap com.mojang.blaze3d.opengl.GlSampler (21 lines)
+javap com.mojang.blaze3d.opengl.GlStateManager (102 lines)
+javap com.mojang.blaze3d.systems.SamplerCache (13 lines)
+javap com.mojang.blaze3d.systems.GpuDevice (26 lines)
+javap com.mojang.blaze3d.vertex.DefaultVertexFormat (20 lines)
+########## DONE ##########
