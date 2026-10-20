@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "metalboi",
+  "version": "${version}",
+  "name": "MetalBoi",
+  "description": "Backend diagnostics plus a render-scale (resolution) changer and selectable upscaler for Minecraft on Fabric, integrated into Sodium's video settings screen.",
+  "authors": [
+    "Ethan-mtl"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Ethan-mtl/MetalBoi",
+    "sources": "https://github.com/Ethan-mtl/MetalBoi",
+    "issues": "https://github.com/Ethan-mtl/MetalBoi/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.metalboi.MetalBoiClient"
+    ]
+  },
+  "mixins": [
+    "metalboi.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21.9",
+    "java": ">=21"
+  },
+  "suggests": {
+    "sodium": ">=0.8.0"
+  }
+}
