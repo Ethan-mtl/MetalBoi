@@ -1,0 +1,20 @@
+Compiled from "GlTexture.java"
+public class com.mojang.blaze3d.opengl.GlTexture extends com.mojang.blaze3d.textures.GpuTexture {
+  private static final int EMPTY;
+  protected final int id;
+  private int firstFboId;
+  private int firstFboDepthId;
+  private it.unimi.dsi.fastutil.ints.Int2IntMap fboCache;
+  protected boolean closed;
+  private int views;
+  protected com.mojang.blaze3d.opengl.GlTexture(int, java.lang.String, com.mojang.blaze3d.textures.TextureFormat, int, int, int, int, int);
+  public void close();
+  private void destroyImmediately();
+  public boolean isClosed();
+  public int getFbo(com.mojang.blaze3d.opengl.DirectStateAccess, com.mojang.blaze3d.textures.GpuTexture);
+  private int createFbo(com.mojang.blaze3d.opengl.DirectStateAccess, int);
+  public int glId();
+  public void addViews();
+  public void removeViews();
+  private int method_68425(com.mojang.blaze3d.opengl.DirectStateAccess, int);
+}

@@ -1,0 +1,21 @@
+Compiled from "GlSampler.java"
+public class com.mojang.blaze3d.opengl.GlSampler extends com.mojang.blaze3d.textures.GpuSampler {
+  private final int id;
+  private final com.mojang.blaze3d.textures.AddressMode addressModeU;
+  private final com.mojang.blaze3d.textures.AddressMode addressModeV;
+  private final com.mojang.blaze3d.textures.FilterMode minFilter;
+  private final com.mojang.blaze3d.textures.FilterMode magFilter;
+  private final int maxAnisotropy;
+  private final java.util.OptionalDouble maxLod;
+  private boolean closed;
+  public com.mojang.blaze3d.opengl.GlSampler(com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.FilterMode, com.mojang.blaze3d.textures.FilterMode, int, java.util.OptionalDouble);
+  public int getId();
+  public com.mojang.blaze3d.textures.AddressMode getAddressModeU();
+  public com.mojang.blaze3d.textures.AddressMode getAddressModeV();
+  public com.mojang.blaze3d.textures.FilterMode getMinFilter();
+  public com.mojang.blaze3d.textures.FilterMode getMagFilter();
+  public int getMaxAnisotropy();
+  public java.util.OptionalDouble getMaxLod();
+  public void close();
+  public boolean isClosed();
+}

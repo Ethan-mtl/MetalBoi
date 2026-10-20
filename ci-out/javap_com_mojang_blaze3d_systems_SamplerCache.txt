@@ -1,0 +1,13 @@
+Compiled from "SamplerCache.java"
+public class com.mojang.blaze3d.systems.SamplerCache {
+  private final com.mojang.blaze3d.textures.GpuSampler[] samplers;
+  public com.mojang.blaze3d.systems.SamplerCache();
+  public void initialize();
+  public com.mojang.blaze3d.textures.GpuSampler getSampler(com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.FilterMode, com.mojang.blaze3d.textures.FilterMode, boolean);
+  public com.mojang.blaze3d.textures.GpuSampler getClampToEdge(com.mojang.blaze3d.textures.FilterMode);
+  public com.mojang.blaze3d.textures.GpuSampler getClampToEdge(com.mojang.blaze3d.textures.FilterMode, boolean);
+  public com.mojang.blaze3d.textures.GpuSampler getRepeat(com.mojang.blaze3d.textures.FilterMode);
+  public com.mojang.blaze3d.textures.GpuSampler getRepeat(com.mojang.blaze3d.textures.FilterMode, boolean);
+  public void close();
+  static int encode(com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.FilterMode, com.mojang.blaze3d.textures.FilterMode, boolean);
+}

@@ -1,0 +1,44 @@
+Compiled from "GlCommandEncoder.java"
+public class com.mojang.blaze3d.opengl.GlCommandEncoder implements com.mojang.blaze3d.systems.CommandEncoder {
+  private static final org.slf4j.Logger LOGGER;
+  private final com.mojang.blaze3d.opengl.GlDevice device;
+  private final int readFbo;
+  private final int drawFbo;
+  private com.mojang.blaze3d.pipeline.RenderPipeline lastPipeline;
+  private boolean inRenderPass;
+  private com.mojang.blaze3d.opengl.GlProgram lastProgram;
+  private com.mojang.blaze3d.opengl.GlTimerQuery activeTimerQuery;
+  protected com.mojang.blaze3d.opengl.GlCommandEncoder(com.mojang.blaze3d.opengl.GlDevice);
+  public com.mojang.blaze3d.systems.RenderPass createRenderPass(java.util.function.Supplier<java.lang.String>, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalInt);
+  public com.mojang.blaze3d.systems.RenderPass createRenderPass(java.util.function.Supplier<java.lang.String>, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalInt, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalDouble);
+  public void clearColorTexture(com.mojang.blaze3d.textures.GpuTexture, int);
+  public void clearColorAndDepthTextures(com.mojang.blaze3d.textures.GpuTexture, int, com.mojang.blaze3d.textures.GpuTexture, double);
+  public void clearColorAndDepthTextures(com.mojang.blaze3d.textures.GpuTexture, int, com.mojang.blaze3d.textures.GpuTexture, double, int, int, int, int);
+  private void verifyRegion(com.mojang.blaze3d.textures.GpuTexture, int, int, int, int);
+  public void clearDepthTexture(com.mojang.blaze3d.textures.GpuTexture, double);
+  private void verifyColorTexture(com.mojang.blaze3d.textures.GpuTexture);
+  private void verifyDepthTexture(com.mojang.blaze3d.textures.GpuTexture);
+  public void writeToBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, java.nio.ByteBuffer);
+  public com.mojang.blaze3d.buffers.GpuBuffer$MappedView mapBuffer(com.mojang.blaze3d.buffers.GpuBuffer, boolean, boolean);
+  public com.mojang.blaze3d.buffers.GpuBuffer$MappedView mapBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, boolean, boolean);
+  public void copyToBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, com.mojang.blaze3d.buffers.GpuBufferSlice);
+  public void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.platform.NativeImage);
+  public void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.platform.NativeImage, int, int, int, int, int, int, int, int);
+  public void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, java.nio.ByteBuffer, com.mojang.blaze3d.platform.NativeImage$Format, int, int, int, int, int, int);
+  public void copyTextureToBuffer(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.buffers.GpuBuffer, long, java.lang.Runnable, int);
+  public void copyTextureToBuffer(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.buffers.GpuBuffer, long, java.lang.Runnable, int, int, int, int, int);
+  public void copyTextureToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.textures.GpuTexture, int, int, int, int, int, int, int);
+  public void presentTexture(com.mojang.blaze3d.textures.GpuTextureView);
+  public com.mojang.blaze3d.buffers.GpuFence createFence();
+  protected <T> void executeDrawMultiple(com.mojang.blaze3d.opengl.GlRenderPass, java.util.Collection<com.mojang.blaze3d.systems.RenderPass$Draw<T>>, com.mojang.blaze3d.buffers.GpuBuffer, com.mojang.blaze3d.vertex.VertexFormat$IndexType, java.util.Collection<java.lang.String>, T);
+  protected void executeDraw(com.mojang.blaze3d.opengl.GlRenderPass, int, int, int, com.mojang.blaze3d.vertex.VertexFormat$IndexType, int);
+  private void drawFromBuffers(com.mojang.blaze3d.opengl.GlRenderPass, int, int, int, com.mojang.blaze3d.vertex.VertexFormat$IndexType, com.mojang.blaze3d.opengl.GlRenderPipeline, int);
+  private boolean trySetup(com.mojang.blaze3d.opengl.GlRenderPass, java.util.Collection<java.lang.String>);
+  private void applyPipelineState(com.mojang.blaze3d.pipeline.RenderPipeline);
+  public void finishRenderPass();
+  protected com.mojang.blaze3d.opengl.GlDevice getDevice();
+  public com.mojang.blaze3d.systems.GpuQuery timerQueryBegin();
+  public void timerQueryEnd(com.mojang.blaze3d.systems.GpuQuery);
+  private static void method_68354(com.mojang.blaze3d.opengl.GlRenderPass, java.lang.String, com.mojang.blaze3d.buffers.GpuBufferSlice);
+  static {};
+}

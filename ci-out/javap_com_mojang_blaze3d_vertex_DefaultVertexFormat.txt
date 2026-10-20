@@ -1,0 +1,20 @@
+Compiled from "DefaultVertexFormat.java"
+public class com.mojang.blaze3d.vertex.DefaultVertexFormat {
+  public static final com.mojang.blaze3d.vertex.VertexFormat EMPTY;
+  public static final com.mojang.blaze3d.vertex.VertexFormat BLOCK;
+  public static final com.mojang.blaze3d.vertex.VertexFormat NEW_ENTITY;
+  public static final com.mojang.blaze3d.vertex.VertexFormat PARTICLE;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR_NORMAL;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR_LIGHTMAP;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_TEX;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_TEX_COLOR;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR_TEX_LIGHTMAP;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_TEX_LIGHTMAP_COLOR;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_TEX_COLOR_NORMAL;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR_LINE_WIDTH;
+  public static final com.mojang.blaze3d.vertex.VertexFormat POSITION_COLOR_NORMAL_LINE_WIDTH;
+  public com.mojang.blaze3d.vertex.DefaultVertexFormat();
+  static {};
+}

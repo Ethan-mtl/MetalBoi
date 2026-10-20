@@ -1,0 +1,36 @@
+SRCJAR=
+NAMED_MC_JAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2.jar
+
+########## VANILLA SHADER ASSETS ##########
+--- shader-ish asset paths ---
+93
+assets/minecraft/shaders/core/animate_sprite_blit.fsh
+assets/minecraft/shaders/core/blit_screen.fsh
+assets/minecraft/shaders/core/position_tex.fsh
+assets/minecraft/shaders/core/position_tex.vsh
+assets/minecraft/shaders/core/position_tex_color.fsh
+assets/minecraft/shaders/core/position_tex_color.vsh
+assets/minecraft/shaders/core/screenquad.vsh
+assets/minecraft/shaders/post/bits.fsh
+assets/minecraft/shaders/post/blit.fsh
+assets/minecraft/shaders/post/box_blur.fsh
+assets/minecraft/shaders/post/color_convolve.fsh
+assets/minecraft/shaders/post/entity_outline_box_blur.fsh
+assets/minecraft/shaders/post/entity_sobel.fsh
+assets/minecraft/shaders/post/invert.fsh
+assets/minecraft/shaders/post/rotscale.vsh
+assets/minecraft/shaders/post/spiderclip.fsh
+assets/minecraft/shaders/post/transparency.fsh
+shader assets/minecraft/shaders/core/blit_screen.fsh (11 lines)
+shader assets/minecraft/shaders/core/screenquad.vsh (11 lines)
+
+########## JAVAP: encoder + views ##########
+javap com.mojang.blaze3d.opengl.GlCommandEncoder (44 lines)
+javap com.mojang.blaze3d.opengl.GlTextureView (16 lines)
+javap com.mojang.blaze3d.opengl.GlTexture (20 lines)
+javap com.mojang.blaze3d.opengl.GlSampler (21 lines)
+javap com.mojang.blaze3d.opengl.GlStateManager (102 lines)
+javap com.mojang.blaze3d.systems.SamplerCache (13 lines)
+javap com.mojang.blaze3d.systems.GpuDevice (26 lines)
+javap com.mojang.blaze3d.vertex.DefaultVertexFormat (20 lines)
+########## DONE ##########
