@@ -1,0 +1,18 @@
+Compiled from "GLX.java"
+public class com.mojang.blaze3d.platform.GLX {
+  private static final org.slf4j.Logger LOGGER;
+  private static java.lang.String cpuInfo;
+  public com.mojang.blaze3d.platform.GLX();
+  public static int _getRefreshRate(com.mojang.blaze3d.platform.Window);
+  public static java.lang.String _getLWJGLVersion();
+  public static java.util.function.LongSupplier _initGlfw();
+  public static void _setGlfwErrorCallback(org.lwjgl.glfw.GLFWErrorCallbackI);
+  public static boolean _shouldClose(com.mojang.blaze3d.platform.Window);
+  public static java.lang.String _getCpuInfo();
+  public static <T> T make(java.util.function.Supplier<T>);
+  public static <T> T make(T, java.util.function.Consumer<T>);
+  private static long lambda$_initGlfw$2();
+  private static void lambda$_initGlfw$1(java.util.List, int, long);
+  private static void lambda$_initGlfw$0(java.lang.Integer, java.lang.String);
+  static {};
+}

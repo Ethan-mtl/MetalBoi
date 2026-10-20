@@ -1,0 +1,8 @@
+Compiled from "VirtualScreen.java"
+public final class net.minecraft.client.renderer.VirtualScreen implements java.lang.AutoCloseable {
+  private final net.minecraft.client.Minecraft minecraft;
+  private final com.mojang.blaze3d.platform.ScreenManager screenManager;
+  public net.minecraft.client.renderer.VirtualScreen(net.minecraft.client.Minecraft);
+  public com.mojang.blaze3d.platform.Window newWindow(com.mojang.blaze3d.platform.DisplayData, java.lang.String, java.lang.String);
+  public void close();
+}

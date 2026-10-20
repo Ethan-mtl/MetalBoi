@@ -1,0 +1,25 @@
+Compiled from "GpuTexture.java"
+public abstract class com.mojang.blaze3d.textures.GpuTexture implements java.lang.AutoCloseable {
+  public static final int USAGE_COPY_DST;
+  public static final int USAGE_COPY_SRC;
+  public static final int USAGE_TEXTURE_BINDING;
+  public static final int USAGE_RENDER_ATTACHMENT;
+  public static final int USAGE_CUBEMAP_COMPATIBLE;
+  private final com.mojang.blaze3d.textures.TextureFormat format;
+  private final int width;
+  private final int height;
+  private final int depthOrLayers;
+  private final int mipLevels;
+  private final int usage;
+  private final java.lang.String label;
+  public com.mojang.blaze3d.textures.GpuTexture(int, java.lang.String, com.mojang.blaze3d.textures.TextureFormat, int, int, int, int);
+  public int getWidth(int);
+  public int getHeight(int);
+  public int getDepthOrLayers();
+  public int getMipLevels();
+  public com.mojang.blaze3d.textures.TextureFormat getFormat();
+  public int usage();
+  public java.lang.String getLabel();
+  public abstract void close();
+  public abstract boolean isClosed();
+}

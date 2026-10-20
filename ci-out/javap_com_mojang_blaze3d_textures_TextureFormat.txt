@@ -1,0 +1,17 @@
+Compiled from "TextureFormat.java"
+public final class com.mojang.blaze3d.textures.TextureFormat extends java.lang.Enum<com.mojang.blaze3d.textures.TextureFormat> {
+  public static final com.mojang.blaze3d.textures.TextureFormat RGBA8;
+  public static final com.mojang.blaze3d.textures.TextureFormat RED8;
+  public static final com.mojang.blaze3d.textures.TextureFormat RED8I;
+  public static final com.mojang.blaze3d.textures.TextureFormat DEPTH32;
+  private final int pixelSize;
+  private static final com.mojang.blaze3d.textures.TextureFormat[] $VALUES;
+  public static com.mojang.blaze3d.textures.TextureFormat[] values();
+  public static com.mojang.blaze3d.textures.TextureFormat valueOf(java.lang.String);
+  private com.mojang.blaze3d.textures.TextureFormat(int);
+  public int pixelSize();
+  public boolean hasColorAspect();
+  public boolean hasDepthAspect();
+  private static com.mojang.blaze3d.textures.TextureFormat[] $values();
+  static {};
+}

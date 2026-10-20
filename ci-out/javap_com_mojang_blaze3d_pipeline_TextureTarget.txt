@@ -1,0 +1,4 @@
+Compiled from "TextureTarget.java"
+public class com.mojang.blaze3d.pipeline.TextureTarget extends com.mojang.blaze3d.pipeline.RenderTarget {
+  public com.mojang.blaze3d.pipeline.TextureTarget(java.lang.String, int, int, boolean);
+}

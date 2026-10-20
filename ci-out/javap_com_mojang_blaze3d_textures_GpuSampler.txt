@@ -1,0 +1,11 @@
+Compiled from "GpuSampler.java"
+public abstract class com.mojang.blaze3d.textures.GpuSampler implements java.lang.AutoCloseable {
+  public com.mojang.blaze3d.textures.GpuSampler();
+  public abstract com.mojang.blaze3d.textures.AddressMode getAddressModeU();
+  public abstract com.mojang.blaze3d.textures.AddressMode getAddressModeV();
+  public abstract com.mojang.blaze3d.textures.FilterMode getMinFilter();
+  public abstract com.mojang.blaze3d.textures.FilterMode getMagFilter();
+  public abstract int getMaxAnisotropy();
+  public abstract java.util.OptionalDouble getMaxLod();
+  public abstract void close();
+}

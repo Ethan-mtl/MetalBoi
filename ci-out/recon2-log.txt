@@ -1,0 +1,69 @@
+########## GEN SOURCES ##########
+genSources exit=0
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Configure project :
+Fabric Loom: 1.16.1
+
+> Task :validateAccessWidener NO-SOURCE
+
+> Task :genSourcesWithVineflower
+Decompile cache stats: 0 hits, 6622 misses
+
+> Task :genSources
+
+BUILD SUCCESSFUL in 1m 38s
+1 actionable task: 1 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.4.1/userguide/configuration_cache_enabling.html
+
+########## LOCATE SOURCES JAR ##########
+SRCJAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2-sources.jar
+NAMED_MC_JAR=/home/runner/.gradle/caches/fabric-loom/minecraftMaven/net/minecraft/minecraft-merged/1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2/minecraft-merged-1.21.11-loom.mappings.1_21_11.layered+hash.2198-v2.jar
+extracted net/minecraft/client/Minecraft.java (2930 lines)
+extracted net/minecraft/client/renderer/VirtualScreen.java (29 lines)
+extracted net/minecraft/client/renderer/GameRenderer.java (908 lines)
+extracted net/minecraft/client/renderer/RenderPipelines.java (772 lines)
+extracted net/minecraft/client/gui/render/GuiRenderer.java (734 lines)
+extracted com/mojang/blaze3d/pipeline/MainTarget.java (132 lines)
+extracted com/mojang/blaze3d/pipeline/RenderTarget.java (136 lines)
+extracted com/mojang/blaze3d/pipeline/TextureTarget.java (15 lines)
+extracted com/mojang/blaze3d/pipeline/RenderPipeline.java (533 lines)
+extracted com/mojang/blaze3d/systems/RenderSystem.java (412 lines)
+extracted com/mojang/blaze3d/platform/Window.java (511 lines)
+extracted com/mojang/blaze3d/platform/MacosUtil.java (75 lines)
+extracted com/mojang/blaze3d/platform/GLX.java (105 lines)
+extracted com/mojang/blaze3d/opengl/GlDevice.java (445 lines)
+extracted com/mojang/blaze3d/opengl/GlRenderPass.java (202 lines)
+extracted com/mojang/blaze3d/opengl/GlProgram.java (156 lines)
+extracted com/mojang/blaze3d/textures/GpuTexture.java (76 lines)
+extracted com/mojang/blaze3d/textures/GpuTextureView.java (43 lines)
+extracted com/mojang/blaze3d/textures/TextureFormat.java (32 lines)
+extracted com/mojang/blaze3d/textures/FilterMode.java (12 lines)
+
+########## EXTRA JAVAP ##########
+javap net.minecraft.client.renderer.VirtualScreen (8 lines)
+javap com.mojang.blaze3d.pipeline.MainTarget (14 lines)
+javap com.mojang.blaze3d.pipeline.MainTarget$Dimension (10 lines)
+javap com.mojang.blaze3d.pipeline.TextureTarget (4 lines)
+javap com.mojang.blaze3d.platform.MacosUtil (16 lines)
+javap com.mojang.blaze3d.platform.GLX (18 lines)
+javap com.mojang.blaze3d.opengl.GlDevice (62 lines)
+javap com.mojang.blaze3d.opengl.GlRenderPass (39 lines)
+javap com.mojang.blaze3d.systems.RenderPass (17 lines)
+javap com.mojang.blaze3d.systems.GpuDevice (26 lines)
+javap com.mojang.blaze3d.systems.CommandEncoder (23 lines)
+javap com.mojang.blaze3d.textures.GpuTexture (25 lines)
+javap com.mojang.blaze3d.textures.GpuTextureView (14 lines)
+javap com.mojang.blaze3d.textures.TextureFormat (17 lines)
+javap com.mojang.blaze3d.textures.GpuSampler (11 lines)
+javap net.minecraft.client.gui.render.GuiRenderer (79 lines)
+javap net.minecraft.client.gui.screens.Screen (110 lines)
+javap net.minecraft.network.chat.Component (39 lines)
+
+########## RENDERER PACKAGE CLASS LIST ##########
+com/mojang/blaze3d/pipeline/MainTarget$Dimension.class
+com/mojang/blaze3d/pipeline/MainTarget.class
+com/mojang/blaze3d/pipeline/TextureTarget.class
+net/minecraft/client/renderer/VirtualScreen.class
+########## DONE ##########

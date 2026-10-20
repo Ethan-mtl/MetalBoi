@@ -1,0 +1,14 @@
+Compiled from "GpuTextureView.java"
+public abstract class com.mojang.blaze3d.textures.GpuTextureView implements java.lang.AutoCloseable {
+  private final com.mojang.blaze3d.textures.GpuTexture texture;
+  private final int baseMipLevel;
+  private final int mipLevels;
+  public com.mojang.blaze3d.textures.GpuTextureView(com.mojang.blaze3d.textures.GpuTexture, int, int);
+  public abstract void close();
+  public com.mojang.blaze3d.textures.GpuTexture texture();
+  public int baseMipLevel();
+  public int mipLevels();
+  public int getWidth(int);
+  public int getHeight(int);
+  public abstract boolean isClosed();
+}

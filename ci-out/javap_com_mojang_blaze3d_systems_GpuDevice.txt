@@ -1,0 +1,26 @@
+Compiled from "GpuDevice.java"
+public interface com.mojang.blaze3d.systems.GpuDevice {
+  public abstract com.mojang.blaze3d.systems.CommandEncoder createCommandEncoder();
+  public abstract com.mojang.blaze3d.textures.GpuSampler createSampler(com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.AddressMode, com.mojang.blaze3d.textures.FilterMode, com.mojang.blaze3d.textures.FilterMode, int, java.util.OptionalDouble);
+  public abstract com.mojang.blaze3d.textures.GpuTexture createTexture(java.util.function.Supplier<java.lang.String>, int, com.mojang.blaze3d.textures.TextureFormat, int, int, int, int);
+  public abstract com.mojang.blaze3d.textures.GpuTexture createTexture(java.lang.String, int, com.mojang.blaze3d.textures.TextureFormat, int, int, int, int);
+  public abstract com.mojang.blaze3d.textures.GpuTextureView createTextureView(com.mojang.blaze3d.textures.GpuTexture);
+  public abstract com.mojang.blaze3d.textures.GpuTextureView createTextureView(com.mojang.blaze3d.textures.GpuTexture, int, int);
+  public abstract com.mojang.blaze3d.buffers.GpuBuffer createBuffer(java.util.function.Supplier<java.lang.String>, int, long);
+  public abstract com.mojang.blaze3d.buffers.GpuBuffer createBuffer(java.util.function.Supplier<java.lang.String>, int, java.nio.ByteBuffer);
+  public abstract java.lang.String getImplementationInformation();
+  public abstract java.util.List<java.lang.String> getLastDebugMessages();
+  public abstract boolean isDebuggingEnabled();
+  public abstract java.lang.String getVendor();
+  public abstract java.lang.String getBackendName();
+  public abstract java.lang.String getVersion();
+  public abstract java.lang.String getRenderer();
+  public abstract int getMaxTextureSize();
+  public abstract int getUniformOffsetAlignment();
+  public default com.mojang.blaze3d.pipeline.CompiledRenderPipeline precompilePipeline(com.mojang.blaze3d.pipeline.RenderPipeline);
+  public abstract com.mojang.blaze3d.pipeline.CompiledRenderPipeline precompilePipeline(com.mojang.blaze3d.pipeline.RenderPipeline, com.mojang.blaze3d.shaders.ShaderSource);
+  public abstract void clearPipelineCache();
+  public abstract java.util.List<java.lang.String> getEnabledExtensions();
+  public abstract int getMaxSupportedAnisotropy();
+  public abstract void close();
+}

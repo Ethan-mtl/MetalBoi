@@ -1,0 +1,23 @@
+Compiled from "CommandEncoder.java"
+public interface com.mojang.blaze3d.systems.CommandEncoder {
+  public abstract com.mojang.blaze3d.systems.RenderPass createRenderPass(java.util.function.Supplier<java.lang.String>, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalInt);
+  public abstract com.mojang.blaze3d.systems.RenderPass createRenderPass(java.util.function.Supplier<java.lang.String>, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalInt, com.mojang.blaze3d.textures.GpuTextureView, java.util.OptionalDouble);
+  public abstract void clearColorTexture(com.mojang.blaze3d.textures.GpuTexture, int);
+  public abstract void clearColorAndDepthTextures(com.mojang.blaze3d.textures.GpuTexture, int, com.mojang.blaze3d.textures.GpuTexture, double);
+  public abstract void clearColorAndDepthTextures(com.mojang.blaze3d.textures.GpuTexture, int, com.mojang.blaze3d.textures.GpuTexture, double, int, int, int, int);
+  public abstract void clearDepthTexture(com.mojang.blaze3d.textures.GpuTexture, double);
+  public abstract void writeToBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, java.nio.ByteBuffer);
+  public abstract com.mojang.blaze3d.buffers.GpuBuffer$MappedView mapBuffer(com.mojang.blaze3d.buffers.GpuBuffer, boolean, boolean);
+  public abstract com.mojang.blaze3d.buffers.GpuBuffer$MappedView mapBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, boolean, boolean);
+  public abstract void copyToBuffer(com.mojang.blaze3d.buffers.GpuBufferSlice, com.mojang.blaze3d.buffers.GpuBufferSlice);
+  public abstract void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.platform.NativeImage);
+  public abstract void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.platform.NativeImage, int, int, int, int, int, int, int, int);
+  public abstract void writeToTexture(com.mojang.blaze3d.textures.GpuTexture, java.nio.ByteBuffer, com.mojang.blaze3d.platform.NativeImage$Format, int, int, int, int, int, int);
+  public abstract void copyTextureToBuffer(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.buffers.GpuBuffer, long, java.lang.Runnable, int);
+  public abstract void copyTextureToBuffer(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.buffers.GpuBuffer, long, java.lang.Runnable, int, int, int, int, int);
+  public abstract void copyTextureToTexture(com.mojang.blaze3d.textures.GpuTexture, com.mojang.blaze3d.textures.GpuTexture, int, int, int, int, int, int, int);
+  public abstract void presentTexture(com.mojang.blaze3d.textures.GpuTextureView);
+  public abstract com.mojang.blaze3d.buffers.GpuFence createFence();
+  public abstract com.mojang.blaze3d.systems.GpuQuery timerQueryBegin();
+  public abstract void timerQueryEnd(com.mojang.blaze3d.systems.GpuQuery);
+}

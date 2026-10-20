@@ -1,0 +1,39 @@
+Compiled from "GlRenderPass.java"
+public class com.mojang.blaze3d.opengl.GlRenderPass implements com.mojang.blaze3d.systems.RenderPass {
+  protected static final int MAX_VERTEX_BUFFERS;
+  public static final boolean VALIDATION;
+  private final com.mojang.blaze3d.opengl.GlCommandEncoder encoder;
+  private final boolean hasDepthTexture;
+  private boolean closed;
+  protected com.mojang.blaze3d.opengl.GlRenderPipeline pipeline;
+  protected final com.mojang.blaze3d.buffers.GpuBuffer[] vertexBuffers;
+  protected com.mojang.blaze3d.buffers.GpuBuffer indexBuffer;
+  protected com.mojang.blaze3d.vertex.VertexFormat$IndexType indexType;
+  private final com.mojang.blaze3d.systems.ScissorState scissorState;
+  protected final java.util.HashMap<java.lang.String, com.mojang.blaze3d.buffers.GpuBufferSlice> uniforms;
+  protected final java.util.HashMap<java.lang.String, com.mojang.blaze3d.opengl.GlRenderPass$TextureViewAndSampler> samplers;
+  protected final java.util.Set<java.lang.String> dirtyUniforms;
+  protected int pushedDebugGroups;
+  public com.mojang.blaze3d.opengl.GlRenderPass(com.mojang.blaze3d.opengl.GlCommandEncoder, boolean);
+  public boolean hasDepthTexture();
+  public void pushDebugGroup(java.util.function.Supplier<java.lang.String>);
+  public void popDebugGroup();
+  public void setPipeline(com.mojang.blaze3d.pipeline.RenderPipeline);
+  public void bindTexture(java.lang.String, com.mojang.blaze3d.textures.GpuTextureView, com.mojang.blaze3d.textures.GpuSampler);
+  public void setUniform(java.lang.String, com.mojang.blaze3d.buffers.GpuBuffer);
+  public void setUniform(java.lang.String, com.mojang.blaze3d.buffers.GpuBufferSlice);
+  public void enableScissor(int, int, int, int);
+  public void disableScissor();
+  public boolean isScissorEnabled();
+  public int getScissorX();
+  public int getScissorY();
+  public int getScissorWidth();
+  public int getScissorHeight();
+  public void setVertexBuffer(int, com.mojang.blaze3d.buffers.GpuBuffer);
+  public void setIndexBuffer(com.mojang.blaze3d.buffers.GpuBuffer, com.mojang.blaze3d.vertex.VertexFormat$IndexType);
+  public void drawIndexed(int, int, int, int);
+  public <T> void drawMultipleIndexed(java.util.Collection<com.mojang.blaze3d.systems.RenderPass$Draw<T>>, com.mojang.blaze3d.buffers.GpuBuffer, com.mojang.blaze3d.vertex.VertexFormat$IndexType, java.util.Collection<java.lang.String>, T);
+  public void draw(int, int);
+  public void close();
+  static {};
+}

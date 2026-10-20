@@ -1,0 +1,14 @@
+Compiled from "MainTarget.java"
+public class com.mojang.blaze3d.pipeline.MainTarget extends com.mojang.blaze3d.pipeline.RenderTarget {
+  public static final int DEFAULT_WIDTH;
+  public static final int DEFAULT_HEIGHT;
+  static final com.mojang.blaze3d.pipeline.MainTarget$Dimension DEFAULT_DIMENSIONS;
+  public com.mojang.blaze3d.pipeline.MainTarget(int, int);
+  private void createFrameBuffer(int, int);
+  private com.mojang.blaze3d.pipeline.MainTarget$Dimension allocateAttachments(int, int);
+  private com.mojang.blaze3d.textures.GpuTexture allocateColorAttachment(com.mojang.blaze3d.pipeline.MainTarget$Dimension);
+  private com.mojang.blaze3d.textures.GpuTexture allocateDepthAttachment(com.mojang.blaze3d.pipeline.MainTarget$Dimension);
+  private java.lang.String method_67724();
+  private java.lang.String method_67725();
+  static {};
+}

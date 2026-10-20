@@ -1,0 +1,16 @@
+Compiled from "MacosUtil.java"
+public class com.mojang.blaze3d.platform.MacosUtil {
+  public static final boolean IS_MACOS;
+  private static final int NS_RESIZABLE_WINDOW_MASK;
+  private static final int NS_FULL_SCREEN_WINDOW_MASK;
+  public com.mojang.blaze3d.platform.MacosUtil();
+  public static void exitNativeFullscreen(com.mojang.blaze3d.platform.Window);
+  public static void clearResizableBit(com.mojang.blaze3d.platform.Window);
+  private static java.util.Optional<ca.weblite.objc.NSObject> getNsWindow(com.mojang.blaze3d.platform.Window);
+  private static boolean isInNativeFullscreen(ca.weblite.objc.NSObject);
+  private static long getStyleMask(ca.weblite.objc.NSObject);
+  private static void toggleNativeFullscreen(ca.weblite.objc.NSObject);
+  public static void loadIcon(net.minecraft.server.packs.resources.IoSupplier<java.io.InputStream>) throws java.io.IOException;
+  private static void method_54103(ca.weblite.objc.NSObject);
+  static {};
+}
