@@ -8,6 +8,10 @@ mkdir -p "$OUT/src3" "$OUT/shaders"
 
 log() { echo "$@" | tee -a "$OUT/recon3-log.txt"; }
 
+./gradlew --no-daemon --stacktrace genSources > "$OUT/gensources3.log" 2>SRCJAR=""1
+log "genSources exit=$?"
+tail -15 "$OUT/gensources3.log" | tee -a "$OUT/recon3-log.txt"
+
 SRCJAR=""
 while IFS= read -r j; do
   [ -z "$j" ] && continue
