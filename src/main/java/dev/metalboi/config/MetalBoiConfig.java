@@ -42,7 +42,7 @@ public final class MetalBoiConfig {
     private int renderScalePercent = MAX_SCALE_PERCENT;
 
     /** Filter used when presenting the scaled image. */
-    private Upscaler upscaler = Upscaler.FSR1;
+    private Upscaler upscaler = Upscaler.BICUBIC;
 
     /** RCAS/CAS strength, 0 (off) .. 100 (maximum). */
     private int sharpnessPercent = 60;
@@ -76,7 +76,7 @@ public final class MetalBoiConfig {
     }
 
     public Upscaler getUpscaler() {
-        return this.upscaler == null ? Upscaler.FSR1 : this.upscaler;
+        return this.upscaler == null ? Upscaler.BICUBIC : this.upscaler;
     }
 
     public void setUpscaler(Upscaler upscaler) {
@@ -84,11 +84,11 @@ public final class MetalBoiConfig {
     }
 
     public int getSharpnessPercent() {
-        return Math.clamp(this.sharpnessPercent, 0, 100);
+        return Math.max(0, Math.min(100, this.sharpnessPercent));
     }
 
     public void setSharpnessPercent(int sharpnessPercent) {
-        this.sharpnessPercent = Math.clamp(sharpnessPercent, 0, 100);
+        this.sharpnessPercent = Math.max(0, Math.min(100, sharpnessPercent));
     }
 
     public boolean shouldLogBackendInfo() {
@@ -126,10 +126,10 @@ public final class MetalBoiConfig {
     }
 
     public static int clampScale(int percent) {
-        int clamped = Math.clamp(percent, MIN_SCALE_PERCENT, MAX_SCALE_PERCENT);
+        int clamped = Math.max(MIN_SCALE_PERCENT, Math.min(MAX_SCALE_PERCENT, percent));
         // Snap to the step so the slider and the stored value always agree.
         int snapped = MIN_SCALE_PERCENT + Math.round((clamped - MIN_SCALE_PERCENT) / (float) SCALE_STEP) * SCALE_STEP;
-        return Math.clamp(snapped, MIN_SCALE_PERCENT, MAX_SCALE_PERCENT);
+        return Math.max(MIN_SCALE_PERCENT, Math.min(MAX_SCALE_PERCENT, snapped));
     }
 
     // ---- persistence ----
@@ -161,9 +161,9 @@ public final class MetalBoiConfig {
 
     private void normalise() {
         this.renderScalePercent = clampScale(this.renderScalePercent);
-        this.sharpnessPercent = Math.clamp(this.sharpnessPercent, 0, 100);
+        this.sharpnessPercent = Math.max(0, Math.min(100, this.sharpnessPercent));
         if (this.upscaler == null) {
-            this.upscaler = Upscaler.FSR1;
+            this.upscaler = Upscaler.BICUBIC;
         }
     }
 

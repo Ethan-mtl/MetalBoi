@@ -1,0 +1,47 @@
+name: Build
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Build
+        run: ./gradlew --no-daemon --stacktrace build >build-log.txt 2>&1 || true
+
+      - name: Collect artefacts and log
+        run: |
+          mkdir -p dist ci-out/build
+          cp -v build/libs/*.jar dist/ 2>/dev/null || echo "no jars produced"
+          # Trim the dev/sources jars: the remapped mod jar is the deliverable.
+          rm -f dist/*-sources.jar dist/*-dev.jar
+          ls -la dist/ || true
+          tail -n 700 build-log.txt >ci-out/build/build-log.txt
+
+      - name: Commit artefacts back to the branch
+        run: |
+          git config user.name "MetalBoi CI"
+          git config user.email "ci@metalboi.local"
+          git add -f dist ci-out/build
+          if git diff --cached --quiet; then
+            echo "No build output changes to commit"
+          else
+            git commit -m "ci: build output"
+            git pull --rebase origin "${GITHUB_REF_NAME}" || true
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

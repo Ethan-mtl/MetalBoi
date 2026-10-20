@@ -2,7 +2,11 @@
   "required": true,
   "package": "dev.metalboi.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [],
+  "client": [
+    "RenderTargetMixin",
+    "WindowAccessor",
+    "WindowMixin"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

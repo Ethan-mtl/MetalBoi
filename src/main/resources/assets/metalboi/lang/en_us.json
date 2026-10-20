@@ -1,0 +1,33 @@
+{
+  "metalboi.gui.page": "MetalBoi",
+
+  "metalboi.gui.group.backend": "Renderer Backend",
+  "metalboi.gui.group.resolution": "Resolution & Upscaling",
+
+  "metalboi.gui.option.renderer_enabled": "MetalBoi Renderer",
+  "metalboi.gui.option.renderer_enabled.tooltip": "Renders the frame at a lower internal resolution and resamples it back up to your display, which is the single biggest frame-rate lever available on macOS. The tooltip below also reports the graphics backend actually in use.",
+
+  "metalboi.gui.backend.header": "Detected backend:",
+
+  "metalboi.gui.option.log_backend": "Log Backend Info",
+  "metalboi.gui.option.log_backend.tooltip": "Writes a one-line report of the detected GL vendor, renderer and version to latest.log on the first rendered frame.",
+
+  "metalboi.gui.option.render_scale": "Render Scale",
+  "metalboi.gui.option.render_scale.tooltip": "Internal render resolution as a percentage of your window. Lower values shade far fewer pixels and give a large frame-rate increase; on a Retina display the default framebuffer is already 2x in each axis, so the gains are bigger than they look. 100% is native resolution. The HUD scales with this setting so the interface stays laid out correctly.",
+
+  "metalboi.gui.option.upscaler": "Upscaler",
+  "metalboi.gui.option.upscaler.tooltip.nearest": "Hard pixel replication. Cheapest option, no blur, but visibly blocky below about 85%.",
+  "metalboi.gui.option.upscaler.tooltip.bilinear": "Linear interpolation - what Minecraft itself uses when sizes differ. Cheapest smooth option and the familiar baseline.",
+  "metalboi.gui.option.upscaler.tooltip.bicubic": "Catmull-Rom bicubic, 16 taps. Clearly sharper than bilinear with no ringing. Recommended default.",
+  "metalboi.gui.option.upscaler.tooltip.lanczos": "Lanczos-2, 16 taps. The sharpest pure resampler here; adds slight ringing on very high-contrast edges such as block outlines and text.",
+  "metalboi.gui.option.upscaler.tooltip.sharp": "Bicubic with a deepened negative lobe, driven by the sharpening slider. Same cost as bicubic, and the best choice at low render scales where softness is the main complaint.",
+
+  "metalboi.gui.option.sharpness": "Sharpening Strength",
+  "metalboi.gui.option.sharpness.tooltip": "How far the bicubic kernel's negative lobe is pushed beyond neutral Catmull-Rom. 0% is identical to the Bicubic upscaler; 100% is the strongest edge emphasis. Only used when the upscaler is set to Sharpened bicubic.",
+
+  "metalboi.gui.upscaler.nearest": "Nearest",
+  "metalboi.gui.upscaler.bilinear": "Bilinear",
+  "metalboi.gui.upscaler.bicubic": "Bicubic",
+  "metalboi.gui.upscaler.lanczos": "Lanczos 2",
+  "metalboi.gui.upscaler.sharp": "Sharpened bicubic"
+}

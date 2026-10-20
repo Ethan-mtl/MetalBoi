@@ -6,47 +6,54 @@ import java.util.Locale;
  * The filter used when the internally-rendered (scaled) image is presented at the
  * window's native resolution.
  *
- * <p>Everything here runs as a plain GLSL fragment pass on the final blit, so it
- * costs a fraction of a millisecond even at 4K.</p>
+ * <p>Nearest and bilinear reuse Minecraft's own blit pipeline and differ only in the
+ * texture sampler, so they are effectively free. The other three run a single
+ * fullscreen fragment pass on top of the scaled image.</p>
  */
 public enum Upscaler {
     /**
-     * Vanilla behaviour: let {@code glBlitFramebuffer} stretch with
-     * {@code GL_LINEAR}. Cheapest possible option, softest result.
-     */
-    BILINEAR,
-
-    /**
-     * Hard pixel doubling via {@code GL_NEAREST}. Zero blur, maximum sharpness,
-     * very visible blockiness below ~85% scale.
+     * Hard pixel replication via {@code GL_NEAREST}. Zero blur, maximum crispness,
+     * very visible blockiness below roughly 85% scale. Best for a deliberately
+     * retro look and the cheapest of all options.
      */
     NEAREST,
 
     /**
-     * Bilinear sampling followed by a single-pass AMD CAS (Contrast Adaptive
-     * Sharpening). Cheap and noticeably crisper than bilinear.
+     * Linear interpolation via {@code GL_LINEAR}. This is what Minecraft itself does
+     * when the framebuffer and window sizes differ, so it is the familiar baseline.
      */
-    SHARP,
+    BILINEAR,
 
     /**
-     * AMD FidelityFX Super Resolution 1.0: EASU (edge-adaptive spatial upscale)
-     * plus RCAS (robust contrast adaptive sharpening). Best quality of the
-     * non-temporal options, still a single fullscreen pass.
-     *
-     * <p>MetalBoi uses spatial upscalers only on purpose: temporal upscalers need
-     * motion vectors and a history buffer, which Minecraft's renderer does not
-     * expose to mods.</p>
+     * Separable Catmull-Rom bicubic (Mitchell-Netravali with B=0, C=0.5), 16 taps.
+     * Noticeably sharper than bilinear with no visible ringing. Good default.
      */
-    FSR1;
+    BICUBIC,
 
     /**
-     * @return true when this mode needs the custom shader pass rather than a
-     *         plain framebuffer blit.
+     * Separable Lanczos-2 resampling, 16 taps. The sharpest of the pure resampling
+     * filters; introduces slight ringing on very high-contrast edges (block outlines,
+     * text) in exchange for crisper detail.
+     */
+    LANCZOS,
+
+    /**
+     * Catmull-Rom bicubic with an increased negative lobe (Mitchell-Netravali with
+     * B=0 and C driven by the sharpening slider). Same 16-tap cost as bicubic, but
+     * the extra edge emphasis counteracts the softness introduced by rendering at a
+     * lower internal resolution.
+     */
+    SHARP;
+
+    /**
+     * @return true when this mode needs MetalBoi's own shader pass rather than
+     *         Minecraft's built-in blit.
      */
     public boolean usesShader() {
-        return this == SHARP || this == FSR1;
+        return this == BICUBIC || this == LANCZOS || this == SHARP;
     }
 
+    /** Lowercase identifier, used for translation keys and pipeline locations. */
     public String id() {
         return this.name().toLowerCase(Locale.ROOT);
     }

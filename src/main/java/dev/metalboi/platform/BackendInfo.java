@@ -1,6 +1,7 @@
 package dev.metalboi.platform;
 
 import dev.metalboi.MetalBoi;
+import dev.metalboi.config.MetalBoiConfig;
 
 import java.util.Locale;
 
@@ -34,8 +35,31 @@ public final class BackendInfo {
     }
 
     private static volatile Snapshot snapshot = Snapshot.unknown();
+    private static volatile boolean logged;
 
     private BackendInfo() {
+    }
+
+    /**
+     * Probe and log the backend exactly once, on the first frame that reaches the
+     * present path - by then the GL context is guaranteed to exist.
+     */
+    public static void logOnce() {
+        if (logged || !MetalBoiConfig.get().shouldLogBackendInfo()) {
+            logged = true;
+            return;
+        }
+        logged = true;
+
+        Snapshot s = refresh();
+        MetalBoi.LOGGER.info("[MetalBoi] backend: {}", s.summary());
+        MetalBoi.LOGGER.info("[MetalBoi] api={}, device={}", s.apiDescription(), s.backendDescription());
+        MetalBoi.LOGGER.info("[MetalBoi] {}", s.explanation());
+        if (s.kind() == Kind.TRANSLATED) {
+            MetalBoi.LOGGER.warn(
+                    "[MetalBoi] a graphics translation layer is in the render path - this usually costs more "
+                            + "frame rate than running the platform's native OpenGL driver.");
+        }
     }
 
     /** Immutable report captured from the render thread once GL is current. */

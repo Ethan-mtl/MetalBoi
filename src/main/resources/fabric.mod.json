@@ -3,7 +3,7 @@
   "id": "metalboi",
   "version": "${version}",
   "name": "MetalBoi",
-  "description": "Backend diagnostics plus a render-scale (resolution) changer and selectable upscaler for Minecraft on Fabric, integrated into Sodium's video settings screen.",
+  "description": "Reports the graphics backend Minecraft is really running on, and adds a render-scale (internal resolution) changer with a selectable upscaler. Settings appear as a MetalBoi tab in Sodium's video options when Sodium is installed.",
   "authors": [
     "Ethan-mtl"
   ],
@@ -17,6 +17,9 @@
   "entrypoints": {
     "client": [
       "dev.metalboi.MetalBoiClient"
+    ],
+    "sodium:config_api_user": [
+      "dev.metalboi.gui.MetalBoiSodiumConfig"
     ]
   },
   "mixins": [
@@ -24,10 +27,10 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": ">=1.21.9",
+    "minecraft": "1.21.11",
     "java": ">=21"
   },
   "suggests": {
-    "sodium": ">=0.8.0"
+    "sodium": ">=0.8.14"
   }
 }
